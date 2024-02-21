@@ -1,6 +1,6 @@
 # based on https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
 
-name: CI
+name: CI_Manual
 
 on: workflow_dispatch
 
