@@ -17,7 +17,7 @@ namespace SpecFlowOnlineBank.Specs.StepDefinitions
         public void StartBrowser()
         {
             ChromeOptions options = new ChromeOptions();
-            //options.AddArgument("--headless=new");
+            options.AddArgument("--headless=new");
 
             this.driver = new ChromeDriver(options);
             this.driver.Manage().Window.Maximize();
