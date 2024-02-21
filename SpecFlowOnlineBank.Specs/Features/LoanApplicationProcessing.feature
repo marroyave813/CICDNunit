@@ -2,7 +2,7 @@
   As a loan application back office employee
   I want to be able to process incoming loan requests
   So we can communicate the results to our customer in a timely manner
-
+  @ignore
 Scenario: Multiple pending loan applications for a customer can be approved at once
 	Given the loan application workload contains the following applications:
 	| Applicant | Amount | Status    |

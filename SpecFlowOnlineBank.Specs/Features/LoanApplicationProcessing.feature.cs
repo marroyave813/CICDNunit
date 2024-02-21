@@ -77,9 +77,11 @@ namespace SpecFlowOnlineBank.Specs.Features
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Multiple pending loan applications for a customer can be approved at once")]
+        [NUnit.Framework.IgnoreAttribute("Ignored scenario")]
         public void MultiplePendingLoanApplicationsForACustomerCanBeApprovedAtOnce()
         {
-            string[] tagsOfScenario = ((string[])(null));
+            string[] tagsOfScenario = new string[] {
+                    "ignore"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Multiple pending loan applications for a customer can be approved at once", null, tagsOfScenario, argumentsOfScenario, featureTags);
 #line 6

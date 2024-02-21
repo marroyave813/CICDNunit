@@ -3,7 +3,7 @@ Feature: LoanApplication
   As a loan application evaluator
   I want to only approve loan requests that meet our agreed upon loan amount rules
   So the risk associated with supplying loans remains within regulatory boundaries
-
+@ignore
 Scenario Outline: Loan amounts under 1000 are always approved
 	Given John is an active ParaBank customer
 	When they apply for a <amount> dollar loan

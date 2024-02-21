@@ -17,7 +17,7 @@ namespace SpecFlowOnlineBank.Specs.StepDefinitions
         public void StartBrowser()
         {
             ChromeOptions options = new ChromeOptions();
-            options.AddArgument("--headless=new");
+            //options.AddArgument("--headless=new");
 
             this.driver = new ChromeDriver(options);
             this.driver.Manage().Window.Maximize();
@@ -37,7 +37,7 @@ namespace SpecFlowOnlineBank.Specs.StepDefinitions
                 .SelectMenuItem("Request Loan");
 
             new RequestLoanPage(this.driver)
-                .SubmitLoanRequest(loanAmount, 1000, 12345);
+                .SubmitLoanRequest(loanAmount, 1000, 13344);
         }
 
         [Then(@"the loan application is (approved|denied)")]
